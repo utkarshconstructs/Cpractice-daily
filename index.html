@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GFG C++ Interview Prep Platform</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>GeeksforGeeks C++ Interview Prep Platform</h1>
+    <p>
+      Study and quiz yourself on 5 high-value GeeksforGeeks C++ interview articles.
+      Your progress is saved automatically in your browser.
+    </p>
+  </header>
+
+  <main>
+    <section class="panel">
+      <h2>Your Progress</h2>
+      <div class="progress-row">
+        <label for="overall-progress">Overall Completion</label>
+        <progress id="overall-progress" value="0" max="100">0%</progress>
+        <span id="overall-progress-text">0%</span>
+      </div>
+      <div class="stats" id="stats"></div>
+      <button id="reset-progress" class="danger">Reset Progress</button>
+    </section>
+
+    <section class="panel" id="articles-panel">
+      <h2>5 Great GFG Articles for C++ Interviews</h2>
+      <div id="article-list"></div>
+    </section>
+
+    <section class="panel" id="quiz-panel">
+      <h2>Quiz</h2>
+      <p class="muted">Pick an article quiz to test retention.</p>
+      <div id="quiz-controls"></div>
+      <div id="quiz-area"></div>
+    </section>
+  </main>
+
+  <template id="article-template">
+    <article class="article-card">
+      <h3 class="article-title"></h3>
+      <p class="article-summary"></p>
+      <ul class="article-points"></ul>
+      <div class="article-actions">
+        <a class="article-link" target="_blank" rel="noopener noreferrer">Read on GFG</a>
+        <button class="mark-read">Mark as Read</button>
+      </div>
+    </article>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>
